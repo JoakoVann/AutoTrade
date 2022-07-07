@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #000;
+}
+
+/* Estilos NavBar */
+.nav{
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav img{
+  height: 40px;
+  width: 150px;
+  margin: 10px 10px 0px 10px
+}
+
+.nav__navBar{
+  flex-grow: .8;
+}
+
+.navBar__order{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navElement{
+  margin: 10px 10px 0px 20px;
+  font-size: 30px;
+  list-style: none;
+  color: #fff;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Estilos main-index */
+  /* Carrousel */
+  .coches{
+    z-index: 5;
+    height: 747px;
+    border-bottom: 5px solid #000;
+    overflow: hidden;
+  }
+
+  .button_marc{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 1px;
+    color:#fff;
+  }
+
+  .button_marc>span{
+    margin-right: 5px;
+  }
+  /* Seccion otras marcas */
+  .otrasMarcas__title{
+    color: #fff;
+    margin-left: 10px;
+    text-align: center;
+    margin:20px 
+  }
+  .otrasMarcas__logo{
+    position:relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+  .inner{
+    position:absolute;
+    width: 200px;
+    z-index: 1;
+  }
+  .inner2{
+    width: 100px;
+    position:absolute;
+    left:10px;
+    top:10px;
+    z-index: 1;
+  }
+  .autos{
+    max-width: 550px;
+    height: 367px;
+    inset: 0;
+    object-fit: cover;
+    transition: transform .75s;
+  }
+  .autos:hover{
+    transform: scale(1.15);
+  }
+  .texto{
+    position:absolute;
+    color:rgb(255, 255, 255);
+    bottom: 15px;
+    left:80%;
+    font-size: 16px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 1px;
+    color:#fff;
+    padding: 5px;
+    z-index: 1;
+  }
+/* Fin estilos main-index */
+/* Estilos Footer */
+  .piePag{
+    color: #fff;
+    border-top: 4px double #fff;
+    background-color: rgb(41, 41, 41);
+    margin-bottom: 15px;
+  }
+  .piePag__inf{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  .text_fot{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .inf__redes{
+    margin-left: 10px;
+  }
+  .redes__iconos{
+    display: flex;
+    list-style: none;
+  }
+  .redes__iconos>li, .redes__iconos>li>a{
+    margin-right: 10px;
+    padding-right: 15px;
+    color: #fff;
+  }
+  .redes__iconos>li::after{
+    content: "|";
+    margin-left: 10px;
+  }
+  .redes__iconos>li>a::after{
+    content: "  ";
+  }
+/* Fin estilos footer */

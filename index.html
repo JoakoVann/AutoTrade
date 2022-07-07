@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/styles.css">  <!-- mi CSS -->
+  <script src="js/main.js"></script><!-- MI JS -->
+  <link rel="shortcut icon" href="resources/logo.png">
+  <title>Concesionaria AutoTrade</title>
+</head>
+<body>
+<!-- Encabezado del sitio -->
+<header class="nav">
+  <div class="nav__logo">
+    <img src="resources/logo.png" alt="logo">
+  </div>
+  <nav class="nav__navBar">
+    <ul class="navBar__order">
+      <a href="#">
+        <li class="navElement">Inicio</li>
+      </a>
+      <a href="pages/vehiculos">
+        <li class="navElement">Vehiculos</li>
+      </a>
+    </ul>
+  </nav>
+</header>
+<!-- Main -->
+<main>
+  <section class="coches">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="resources/ferrari-488-pista-nurburgring-video-201961687-1571338545_1.webp" class="d-block w-100" alt="Ferrari">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Ferrari asociacion </h5>
+            <button class="button_marc" type="button">
+              <span>Descrubre la gama ferrari</span>
+              <img src="https://prints.ultracoloringpages.com/c42a3292f4636ae4088bf56b4ab08ac6.png" width="42px" height="42px">
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="resources/aventor.jpg" class="d-block w-100" alt="Lamborghini">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Lamborghini Asociacion</h5>
+            <button class="button_marc" type="button">
+              <span>Descrubre la gama Lamborghini</span>
+              <img src="https://prints.ultracoloringpages.com/c42a3292f4636ae4088bf56b4ab08ac6.png" width="42px" height="42px">
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="resources/Prueba-Mercedes-AMG-GT-R-3.jpg" class="d-block w-100" alt="Mercedez">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Mercedez AMG asociacion</h5>
+            <button class="button_marc" type="button">
+              <span>Descrubre la gama Mercedez</span>
+              <img src="https://prints.ultracoloringpages.com/c42a3292f4636ae4088bf56b4ab08ac6.png" width="42px" height="42px">
+            </button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+  <section class="otrasMarcas">
+    <h1 class="otrasMarcas__title">Otras marcas con las que trabajamos</h1>
+    <div class="container ">
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="bordes">
+            <a href="pages/vehiculos"><div class="otrasMarcas__logo">
+                <p class="texto">Ford Motor</p>
+              <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c47c.png" class="inner">
+              <img src="https://media.ford.com/content/fordmedia/fsa/ar/es/news/2020/10/estilo-suv--conoce-a-fondo-los-modelos-de-ford/jcr:content/image.img.881.495.jpg/1603994506998.jpg" class="autos">
+            </div></a>
+          </div>
+        </div>
+      
+        <div class="col-lg-6">
+          <div class="bordes">
+            <a href="pages/vehiculos"><div class="otrasMarcas__logo">
+                  <p class="texto">Toyota</p>
+              <img src="https://www.pnguniverse.com/wp-content/uploads/2020/10/Toyota-1024x641.png" class="inner2">
+              <img src="https://static.motor.es/fotos-noticias/2021/02/toyota-gt86-cese-ventas-reino-unido-202175065-1612452721_1.jpg" class="autos">
+            </div></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="bordes">
+            <a href="pages/vehiculos"><div class="otrasMarcas__logo">
+                <p clasS="texto"> BMW </p>
+              <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c46e.png" class="inner2">
+              <img src="https://img.remediosdigitales.com/769abb/bmw_m4_csl_20/1366_2000.jpeg" class="autos">
+            </div></a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="bordes">
+            <a href="pages/vehiculos"><div class="otrasMarcas__logo">
+                <p class="texto"> Audi </p>
+              <img src="http://assets.stickpng.com/images/580b585b2edbce24c47b2c18.png" class="inner2">
+              <img src="https://cdn.motor1.com/images/mgl/B3mOR/s1/nacido-en-cuarentena-audi-presento-el-nuevo-a3-sedan.jpg" class="autos">
+            </div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- Footer -->
+<footer class="piePag">
+  <div class="piePag__inf">
+      <p class="text_fot">Todos los derechos reservados</p>
+    <div class="inf_cont">
+      <p class="text_fot">Contacto</p>
+      <p class="text_fot">Teléfono: +54 9 221 398-4557</p>
+      <p class="text_fot">Email: autotrade@gmail.com</p>
+    </div>
+  </div>
+  <div class="inf__redes">
+    <p>Redes Sociales</p>
+    <ul class="redes__iconos">
+      <li><a href="https://www.facebook.com/">Facebook<img src="https://nrgteleresources.com/wp-content/uploads/facebook-logo-white.png" width="32px" height="32px" alt=""></a></li>
+      <li><a href="https://www.instagram.com/">Instagram<img src="resources/instagram.png" alt=""></a></li>
+      <li><a href="https://www.twitter.com/">Twitter<img src="resources/twitter.png" alt=""></a></li>
+      <li><a href="https://www.youtube.com/">Youtube<img src="resources/youtube.png" alt=""></a></li>
+    </ul>
+  </div>
+</footer>
+<!-- Script Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
