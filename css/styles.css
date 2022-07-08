@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-body{
+.inicio{
   background-color: #000;
 }
 
@@ -121,6 +121,7 @@ a{
     z-index: 1;
   }
 /* Fin estilos main-index */
+
 /* Estilos Footer */
   .piePag{
     color: #fff;
@@ -138,22 +139,126 @@ a{
     margin-right: 10px;
   }
   .inf__redes{
+    display: flex;
     margin-left: 10px;
+    flex-direction: column;
+    align-items: center;
   }
   .redes__iconos{
     display: flex;
     list-style: none;
   }
   .redes__iconos>li, .redes__iconos>li>a{
-    margin-right: 10px;
-    padding-right: 15px;
+    margin-right: 5px;
+    padding-right: 10px;
     color: #fff;
   }
   .redes__iconos>li::after{
     content: "|";
+    margin-left: 7px;
+  }
+  .fotuli{
     margin-left: 10px;
   }
-  .redes__iconos>li>a::after{
-    content: "  ";
-  }
 /* Fin estilos footer */
+
+/* Estilos coches.html */
+  /* seccion ferrari */
+    .display{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+    .disp_title{
+      border-bottom: 4px solid #f00;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-bottom: 9px;
+      padding-bottom: 5px;
+    }
+    .display__img{
+      background: linear-gradient(7deg, rgba(0,0,0,1) 0%, rgba(106,106,106,1) 50%, rgba(247,247,247,1) 100%);
+      border-radius: 5px;
+      margin-left: 15px;
+    }
+    .display__img>h4{
+      color: #fff;
+      text-align: center;
+      border-top: 2px solid #00f;
+    }
+  /* seccion lamborghini */
+    .lamboCar{
+      background-color: #000;
+    }
+    .titleLamb{
+      color: #fff;
+      background: rgb(0,0,0);
+      background: linear-gradient(0deg, rgba(0,0,0,1) 57%, rgba(106,106,106,1) 70%, rgba(247,247,247,1) 84%);
+      padding: 15px 0px 9px 15px;
+      border-bottom: 4px solid #fff;
+    }
+    .displaylmb{
+      display: flex;
+    }
+    .disp__img{
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    .disp__img>h4{
+      color: #fff;
+      text-align: center;
+      border-top: 2px solid #00f;
+    }
+  /* Seccion no Premium */
+  .title{
+    border-top: 4px solid #000;
+    border-bottom: 5px solid #00f;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .ford_img{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .ford_img>h4{
+    text-align: center;
+    border-top: 2px solid #00f;
+  }
+  .toyo_img{
+    margin-right: 10px;
+  }
+  .toyo_img>h4{
+    text-align: center;
+    border-top: 2px solid rgb(110, 110, 110);
+  }
+  .auditit{
+    margin-left: 15px;
+    border-top: 4px solid #000;
+    border-bottom: 3px double #000;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  .audi_img{
+    margin-right: 15px;
+  }
+  .audi_img>h4{
+    text-align: center;
+    border-top: 2px solid rgba(34, 34, 34, 0.685);
+  }
+  .bmwtitle{
+    margin-left: 15px;
+    border-top: 4px solid #000;
+    border-bottom: 3px double #000;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  .bmw_img{
+    margin-right: 15px;
+  }
+  .bmw_img>h4{
+    text-align: center;
+    border-top: 2px solid rgba(1, 88, 187, 0.685);
+  }
