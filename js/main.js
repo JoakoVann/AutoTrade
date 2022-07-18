@@ -1,15 +1,7 @@
 const iva = 1.21;
 const impues = 1.5;
-let cantAuto = parseInt(prompt("¿Cuantos autos va a comprar?"));
 let precio = 0;
 
-let priceTot = () => {
-  for (cantAuto; cantAuto > 0; cantAuto--) {
-    let precioAuto = parseFloat(prompt(`¿Cuanto cuesta el auto ${cantAuto} ?`));
-    precio = precio + (precioAuto * iva)* impues;
-  }
-  return precio;
-}
 
 function cuantasCuotas(){
   let cuotas = parseInt(prompt("¿Cuantas cuotas desea pagar? minimo 4, maximo 24. (tenga en cuenta que si ingresa un numero mayor a 24, se realizara un solo pago)"));
@@ -29,3 +21,30 @@ function cuantasCuotas(){
 }
 priceTot();
 cuantasCuotas();
+
+class compra {
+  constructor(modelo, marca, precio){
+    this.modelo = modelo;
+    this.marca = marca;
+    this.precio = precio;
+  }
+  sumaPrecio(){
+    this.precio = this.precio + (this.precio * iva)* impues;
+  }
+}
+
+const compra = [];
+
+function cliente (compra){ 
+  let confirma = prompt("¿Desea agregar una compra? (si/no)").toLowerCase();
+  if (confirma === "si") {
+    while (!confirma){
+      compra.push (new compra(prompt("Ingrese el modelo"), prompt("Ingrese la marca"), parseInt(prompt("Ingrese el precio"))));
+      confirma = prompt("¿Desea agregar otra compra? (si/no)").toLowerCase();
+      if (confirma === "no") {
+        break;
+      }
+    }
+  }
+  return compra;
+} //esta funcion lo que haria seria por cada vez que se haga click en el boton de "comprar ahora", vaya creando un array con cada compra realizada por el cliente
