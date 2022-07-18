@@ -33,18 +33,23 @@ class compra {
   }
 }
 
-const compra = [];
+const compras = [];
 
 function cliente (compra){ 
   let confirma = prompt("¿Desea agregar una compra? (si/no)").toLowerCase();
   if (confirma === "si") {
     while (!confirma){
-      compra.push (new compra(prompt("Ingrese el modelo"), prompt("Ingrese la marca"), parseInt(prompt("Ingrese el precio"))));
+      compras.push (new compra(prompt("Ingrese el modelo"), prompt("Ingrese la marca"), parseInt(prompt("Ingrese el precio"))));
       confirma = prompt("¿Desea agregar otra compra? (si/no)").toLowerCase();
       if (confirma === "no") {
         break;
+      }
+      for (const compra of compras){
+        compra.sumaPrecio();
       }
     }
   }
   return compra;
 } //esta funcion lo que haria seria por cada vez que se haga click en el boton de "comprar ahora", vaya creando un array con cada compra realizada por el cliente
+
+cliente(compra);
