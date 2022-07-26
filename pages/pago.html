@@ -21,7 +21,7 @@
       <a href="../index.html">
         <li class="navElement">Inicio</li>
       </a>
-      <a href="../pages/vehiculos">
+      <a href="coches.html">
         <li class="navElement">Vehiculos</li>
       </a>
     </ul>
@@ -32,38 +32,23 @@
   <section class="infoComprador">
     <form>
       <div class="form-floating">
-        <input type="email" class="ingreso form-control" id="floatingInput" placeholder="¿Cual es su nombre?">
+        <input type="text" class="ingreso form-control" id="floatingInput nombre" placeholder="¿Cual es su nombre?">
         <label for="floatingInput">Nombre</label>
       </div>
       <div class="form-floating">
-        <input type="password" class="ingreso form-control" id="floatingPassword" placeholder="¿cual es su apellido?">
+        <input type="text" class="ingreso form-control" id="floatinginputapellido" placeholder="¿cual es su apellido?">
         <label for="floatingPassword">apellido</label>
       </div>
       <div class="form-floating mb-3">
-        <input type="email" class="ingreso form-control" id="floatingInput" placeholder="ej: correo@mimail.com">
+        <input type="email" class="ingreso form-control" id="floatingInput email" placeholder="ej: correo@mimail.com">
         <label for="floatingInput">Email</label>
       </div>
     </form>
   </section>
   <h2>Informacion sobre la cotizacion del auto elegido</h2>
-  <section class="cocheSelect">
-    <div class="cocheImg">
-      <p>El vehiculo que Ud eligio es el siguiente: </p>
-      <div class="imagen">
-        <img src="..." alt="Imagen"> <!-- Aca iria la imagen del vehiculo a comprar -->
-      </div>
-    </div>
-    <div class="info">
-      <div class="price">        
-        <label class="ms-2 mt-1" for="floatingInput">Precio del vehiculo</label>
-        <input type="text" class="form-control ingresar" id="floatingInput" placeholder="precio Vehiculo" readonly>
-        <label class="ms-2 mt-1" for="floatingInput">IVA</label>
-        <input type="text" class="form-control ingresar" id="floatingInput" placeholder="Precio + IVA (21%)" readonly>
-        <label class="ms-2 mt-1" for="floatingInput">Total</label>
-        <input type="text" class="form-control ingresar" id="floatingInput" placeholder="Precio Vehiculo + Impuestos" readonly>
-      </div>
-    </div>
+  <section id="cocheSelect">
   </section>
+
 </main>
 <!-- Footer -->
 <footer class="piePag">

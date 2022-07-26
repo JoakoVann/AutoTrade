@@ -174,17 +174,6 @@ a{
       margin-left: 15px;
       margin-bottom: 10px;
     }
-    .compraBl{
-      background-color: Transparent;
-      background-repeat:no-repeat;
-      border: none;
-      cursor:pointer;
-      overflow: hidden;
-      outline:none;
-      color: #000;
-      margin-left: 15px;
-      margin-bottom: 10px;
-    }
     .display{
       display: flex;
       justify-content: center;
@@ -282,6 +271,33 @@ a{
   .bmw_img>h4{
     text-align: center;
     border-top: 2px solid rgba(1, 88, 187, 0.685);
+  }
+  .float{
+    display: none;
+    position: fixed;
+    right : 10px;
+    bottom : 16px;
+    z-index: 10;
+    padding: 10px;
+    background-color: rgb(6, 179, 6);
+    outline: none;
+    border: none;
+    color: #fff;
+  }
+  .float:hover{
+    background-color: rgb(4, 138, 4);
+    transition: all 0.5s;
+  }
+  .blanco{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: #000;
+    margin-left: 15px;
+    margin-bottom: 10px;
   }
 /* Fin estilos coches.index */
 /* estilos Pago.html */
