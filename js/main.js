@@ -24,29 +24,32 @@ class producto{
 // VARIABLES GLOBALES
 
 let productos = [];
-let prodComprados = [];
 let totalComprados = [];
+let prodComprados= [];
 let total = 0;
 const nombre = document.querySelector('#nombre');
 const apellido = document.querySelector('#apellido');
 const email = document.querySelector('#email');
 // Agregar al carrito
 const finCompra = document.getElementById('flotante');
-const comprar = document.querySelector('.compra');
-const marca = document.querySelector('.marca');
-const modelo = document.querySelector('.modelo');
-const price = document.querySelector('.precio');
-let getElementById = document.getElementById('cocheSelect');
+const comprar = document.querySelectorAll('.compra'); //all
+const marca = document.querySelectorAll('.marca');
+const modelo = document.querySelectorAll('.modelo');
+const price = document.querySelectorAll('.precio');
+let pagar = document.getElementById('cocheSelect');
 
-comprar.addEventListener('click', (e) => {
+
+comprar.forEach(el => el.addEventListener('click', (e) =>{
   e.preventDefault();
-  prodComprados.push(new producto(marca.innerHTML,modelo.innerHTML,parseInt(price.innerHTML)));
+  prodComprados.push(new producto(marca, modelo, parseInt(price)));
   finCompra.style.display = 'block';
-  alert('vehiculo agregado correctamente');
-})
+  
+}));
+
 // Cosas del HTML y estilos
 const compra = document.createElement('section');
-compra.innerHTML = `
+compra.innerHTML =
+`
 <div class="price">        
   <label class="ms-2 mt-1" for="floatingInput">Precio del vehiculo</label>
   <input type="text" class="form-control ingresar" id="floatingInput" placeholder="precio Vehiculo" readonly>
@@ -66,9 +69,9 @@ compra.innerHTML = `
 </div>
 `
 
-let final = document.getElementById(cocheSelect);
+// let final = document.querySelector('#cocheSelect');
 
-finCompra.addEventListener('click', (e) => {
-  e.preventDefault();
-  final.append(compra);
-});
+// finCompra.addEventListener('click', (e) => {
+//   e.preventDefault();
+//   final.appendChild(compra);
+// });
