@@ -40,7 +40,8 @@ let pagar = document.getElementById('cocheSelect');
 let pagarCoche = document.getElementById('cocheSelect');
 const tarjeta = document.createElement('div');
 const imagen = document.querySelectorAll('.coche');
-console.log(imagen);
+let pagos = document.getElementById('cocheSelect');
+
 
 comprar.forEach( el => el.addEventListener('click', (e) => {
   let cocheIndex = comprar.indexOf(el); 
@@ -62,23 +63,26 @@ comprar.forEach( el => el.addEventListener('click', (e) => {
       <input type="text" class="ingreso form-control" id="floatinginputapellido" placeholder="Pago Total" readonly>
       <label for="floatingInput">${total}</label>
     </div>
-    <div class="form-group">
-      <label for="exampleSelect">Eliga sus cuotas</label>
-      <select class="form-control" id="exampleSelect">
-        <option> 1 cuota: ${total} </option>
-        <option> 4 cuotas: ${total/4} </option>
-        <option> 12 cuotas: ${total/12} </option>
-        <option> 24 cuotas: ${total/24} </option>
-        <option> 32 cuotas: ${total/32} </option>
-      </select>
-    </div>
     `;
     localStorage.setItem('productos', JSON.stringify(prodComprados));
+    pagos.appendChild(tarjeta);
     return tarjeta;
   }
 }));
 
 // modificar pagina de pago
 
-let pagos = document.getElementById('cocheSelect');
-pagos.appendChild(tarjeta);
+let cuotas = document.createElement('div');
+cuotas.innerHTML = `
+<div class="form-group">
+<label for="exampleSelect">Eliga sus cuotas</label>
+<select class="form-control" id="exampleSelect">
+  <option> 1 cuota: ${total} </option>
+  <option> 4 cuotas: ${total/4} </option>
+  <option> 12 cuotas: ${total/12} </option>
+  <option> 24 cuotas: ${total/24} </option>
+  <option> 32 cuotas: ${total/32} </option>
+</select>
+</div>
+`;
+pagos.appendChild(cuotas);
