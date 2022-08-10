@@ -48,6 +48,12 @@ comprar.forEach( el => el.addEventListener('click', (e) => {
   prodComprados.push(new producto(modelo[cocheIndex].innerHTML,parseInt(price[cocheIndex].innerHTML).sumaPrecio));
   total = prodComprados.reduce((total, producto) => total + producto.precio, 0);
   finCompra.style.display = 'block';
+  Toastify({
+    text: `Agregado correctamente`,
+    duration: 2500,
+    position: 'right',
+    backgroundColor: '#227008',
+  }).showToast();
   const crearTarjeta = () => {
     tarjeta.innerHTML = `
     <div>
