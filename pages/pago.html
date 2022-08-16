@@ -29,19 +29,20 @@
 <main>
   <h2>Por favor Brindenos informacion sobre ud para poder contactarlo</h2>
   <section class="infoComprador">
-    <form>
+    <form id="formu">
       <div class="form-floating">
-        <input type="text" class="ingreso form-control" id="floatingInput nombre" placeholder="¿Cual es su nombre?">
+        <input type="text" class="ingreso form-control" id="floatingInput nombre" placeholder="¿Cual es su nombre?" name="name">
         <label for="floatingInput">Nombre</label>
       </div>
       <div class="form-floating">
-        <input type="text" class="ingreso form-control" id="floatinginputapellido" placeholder="¿cual es su apellido?">
+        <input type="text" class="ingreso form-control" id="floatinginputapellido" placeholder="¿cual es su apellido?" name="lastname">
         <label for="floatingPassword">apellido</label>
       </div>
       <div class="form-floating mb-3">
-        <input type="email" class="ingreso form-control" id="floatingInput email" placeholder="ej: correo@mimail.com">
+        <input type="email" class="ingreso form-control" id="floatingInput email" placeholder="ej: correo@mimail.com" name="email">
         <label for="floatingInput">Email</label>
       </div>
+      <input type="submit" id="button" value="Enviar Datos">
     </form>
   </section>
   <section id="cocheSelect">
@@ -71,6 +72,14 @@
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  emailjs.init('Nh2gPEVHSPoeWT8rJ')
+</script>
+<script src="../js/main.js">
 </script>
 </body>
 </html>
