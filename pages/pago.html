@@ -7,6 +7,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <!-- Bootstrap -->
   <link rel="stylesheet" href="../css/styles.css">  <!-- mi CSS -->
   <link rel="shortcut icon" href="../resources/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet"> 
   <title>AutoTrade - cotizacion</title>
 </head>
 <body>
@@ -27,9 +30,16 @@
   </nav>
 </header>
 <main>
-  <h2>Por favor Brindenos informacion sobre ud para poder contactarlo</h2>
+  <section id="cocheSelect">
+    <h2 class="tit">Informacion sobre el o los autos seleccionados</h2>
+    
+  </section>
+  <section class="cuotas">
+    <h3 class="tit">Por favor, elija en cuantas cuotas desea realizar su pago</h3>
+  </section>
+  <h2 class="tit">Por favor Brindenos informacion sobre ud para poder contactarlo</h2>
   <section class="infoComprador">
-    <form id="formu">
+    <form id="formu" class="datitos">
       <div class="form-floating">
         <input type="text" class="ingreso form-control" id="floatingInput nombre" placeholder="¿Cual es su nombre?" name="name">
         <label for="floatingInput">Nombre</label>
@@ -42,12 +52,8 @@
         <input type="email" class="ingreso form-control" id="floatingInput email" placeholder="ej: correo@mimail.com" name="email">
         <label for="floatingInput">Email</label>
       </div>
-      <input type="submit" id="button" value="Enviar Datos">
+      <input  type="submit" class="btn btn-outline-dark" id="button" value="Enviar Datos">
     </form>
-  </section>
-  <section id="cocheSelect">
-    <h2>Informacion sobre la cotizacion del auto elegido</h2>
-    
   </section>
 
 </main>
@@ -79,7 +85,7 @@
 <script type="text/javascript">
   emailjs.init('Nh2gPEVHSPoeWT8rJ')
 </script>
-<script src="../js/main.js">
+<script src="../js/pagos.js">
 </script>
 </body>
 </html>
